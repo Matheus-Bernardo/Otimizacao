@@ -14,7 +14,7 @@ const SimplexForm = () => {
       constraints: constraints.split('\n').map(row => row.split(',').map(Number)),
     };
     console.log('Sending data to backend:', data);
-    fetch('http://localhost:5000/api/solve', {
+    fetch('http://ec2-34-227-31-211.compute-1.amazonaws.com:5000/api/solve', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
